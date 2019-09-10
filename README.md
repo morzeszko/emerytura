@@ -24,6 +24,10 @@ gtreg
 Definicja klasy 'public class Trojkat' opisuje cośtam.
 
 ```csharp
+if(x<0)
+x=1;
+else
+x=2;
 /*fsdgsfgs
 gsffdgshs
 fdgs*/

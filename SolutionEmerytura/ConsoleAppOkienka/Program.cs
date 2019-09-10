@@ -3,25 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.VisualBasic;
 
-namespace ConsoleAppEmerytura
+namespace ConsoleAppOkienka
 {
     class Program
     {
         const int wiekEmerytalny = 65;
         static void Main(string[] args)
         {
-            Console.WriteLine("Aplikacja EMERYTURA");
-
-
-            Console.Write("Podaj imię: ");
-            string imie = Console.ReadLine();
-
+            Interaction.MsgBox("Aplikacja EMERYTURA");
+            
+            string imie = Interaction.InputBox("Podaj imię: ");
+            
             Console.WriteLine($"Witaj {imie}!");
 
             Console.Write("Podaj wiek: ");
             int wiek = int.Parse(Console.ReadLine()); //Parse sprawdza czy tekst da się przerobić na liczbę
-            if (wiek< wiekEmerytalny)
+            if (wiek < wiekEmerytalny)
             {
                 Console.WriteLine($"Zostało Ci {wiekEmerytalny - wiek} lat do emerytury");
             }
